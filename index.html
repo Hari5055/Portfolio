@@ -88,7 +88,7 @@ body.light .nav-cta:hover { background: #333; }
 body.light #theme-toggle { border-color: rgba(0,0,0,0.15); color: #1d1d1f; background: rgba(0,0,0,0.05); }
 body.light #theme-toggle:hover { background: rgba(0,0,0,0.1); }
 body.light .tag { background: #e8e8ed; color: #515154; border-color: rgba(0,0,0,0.1); }
-body.light .project-card-num { color: #e8e8ed; }
+body.light .project-card-num { color: rgba(0,0,0,0.18); }
 body.light .timeline::before { background: rgba(0,0,0,0.1); }
 body.light .about-card::before { background: linear-gradient(90deg, transparent, var(--accent), transparent); }
 body.light .project-featured::before { background: linear-gradient(90deg, transparent, var(--accent), transparent); }
@@ -418,7 +418,7 @@ h1 .accent { color: var(--accent2); }
 .project-card-num {
   font-family: 'Playfair Display', serif;
   font-size: 48px; font-weight: 900;
-  color: var(--bg4); line-height: 1;
+  color: rgba(255,255,255,0.22); line-height: 1;
   margin-bottom: 16px;
   user-select: none;
 }
@@ -731,6 +731,7 @@ footer p { font-size: 12px; color: var(--text3); }
 
     <!-- FEATURED -->
     <div class="project-featured reveal">
+      <div class="project-card-num" style="font-family:'Playfair Display',serif;font-size:48px;font-weight:900;color:rgba(255,255,255,0.22);line-height:1;margin-bottom:16px;user-select:none;">01</div>
       <div class="project-badge">Live in production</div>
       <div class="project-featured-top">
         <div>
