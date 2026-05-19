@@ -1042,12 +1042,14 @@ window.addEventListener('scroll', () => {
 
 // ── THEME TOGGLE ──
 const toggleBtn = document.getElementById('theme-toggle');
+// Always default to dark, only switch if user explicitly chose light
 const savedTheme = localStorage.getItem('theme') || 'dark';
 if (savedTheme === 'light') {
   document.body.classList.add('light');
-  toggleBtn.innerHTML = '&#9790;'; // moon
+  toggleBtn.innerHTML = '&#9790;';
 } else {
-  toggleBtn.innerHTML = '&#9788;'; // sun
+  document.body.classList.remove('light');
+  toggleBtn.innerHTML = '&#9788;';
 }
 toggleBtn.addEventListener('click', () => {
   document.body.classList.toggle('light');
